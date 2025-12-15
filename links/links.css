@@ -97,6 +97,7 @@ main {
 	background-color: rgba(65, 65, 92, 0.514);
 	padding: 20px;
 	width: 300px;
+	overflow-y: scroll;
 }
 
 .linktitle{

@@ -1,14 +1,14 @@
 const urlimages = [
-    '../assets/anita-austvika-XRMwJ0boslw-unsplash.jpg',
-    '../assets/ian-dHtsAZUI9fc-unsplash.jpg',
-    '../assets/marco-grosso-0OxGTvdxL-U-unsplash.jpg',
-    '../assets/marek-piwnicki-3wTFUr0wtbk-unsplash.jpg',
-    '../assets/marek-piwnicki-ktllNfb9cBs-unsplash.jpg',
-    '../assets/matthew-stephenson-lfVVXj0a2P4-unsplash.jpg',
-    '../assets/matthew-stephenson-qBEUMUWhZcQ-unsplash.jpg',
-    '../assets/radomir-moysia-3NuzVqnGXHw-unsplash.jpg',
-    '../assets/steve-busch-PjiRvYo-uFw-unsplash.jpg',
-    '../assets/wallace-henry-7Jkp4or_J68-unsplash.jpg',
+    './assets/anita-austvika-XRMwJ0boslw-unsplash.jpg',
+    './assets/ian-dHtsAZUI9fc-unsplash.jpg',
+    './assets/marco-grosso-0OxGTvdxL-U-unsplash.jpg',
+    './assets/marek-piwnicki-3wTFUr0wtbk-unsplash.jpg',
+    './assets/marek-piwnicki-ktllNfb9cBs-unsplash.jpg',
+    './assets/matthew-stephenson-lfVVXj0a2P4-unsplash.jpg',
+    './assets/matthew-stephenson-qBEUMUWhZcQ-unsplash.jpg',
+    './assets/radomir-moysia-3NuzVqnGXHw-unsplash.jpg',
+    './assets/steve-busch-PjiRvYo-uFw-unsplash.jpg',
+    './assets/wallace-henry-7Jkp4or_J68-unsplash.jpg',
 ];
 
 
@@ -164,7 +164,6 @@ async function fetchForecast14days() {
     try {
         const fetching = await fetch('https://api.weatherapi.com/v1/forecast.json?key=f77d07abdacd4593913124243251212&q=Madrid&days=14&aqi=no&alerts=no'); 
         const data = await fetching.json(); 
-        console.log(data);
         return data ;
     }
     catch (error) {
@@ -184,7 +183,6 @@ function displayWeather(data) {
         const precipitacion = data.current.precip_mm;
         const humedad = data.current.humidity;
         const viento = data.current.wind_kph;
-        console.log(data);
         weatherApp.innerHTML = `
         <h1>${ciudad}, ${pais}</h1>
         <h2>${estado}</h2>
