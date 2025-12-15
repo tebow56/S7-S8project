@@ -45,11 +45,11 @@ table {
 /* mis CSS */
 header {
 	display:flex;
+	justify-content: left;
 	width: 100vw;
 }
 
 #retornoInicio{
-	justify-content: flex-start;
 	margin:20px;
 	border-radius: 5px;
 	background-color: rgb(71, 124, 237);
@@ -63,7 +63,7 @@ header {
 	background-color: rgb(71, 124, 237);
     color:aliceblue;
     text-decoration: none;
-    padding: 5px;
+    
 }
 main {
 	display:flex;
@@ -87,7 +87,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	min-height: 100vh;
+	
 }
 #containerPassword {
 	display: flex;

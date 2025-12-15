@@ -46,6 +46,7 @@ table {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-size: cover;
@@ -53,25 +54,33 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-	min-height: 100vh;
+    
+	
     
 }
 header {
-    position: relative;
+    
+    display: flex;
+    justify-content: left;
     flex-direction: row;
-    height: 20px;
-    transform: translateX(-200px);
+    height: 50px;
+    
+    
 }
-
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
 .reloj {
-    transform: translateY(300px);
     background-color: rgba(65, 65, 92, 0.514);
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
     color: white;
     height: 180px;
-    margin-top: -50px;
+    width: 300px;
 }
 #reloj {
     font-size: 40px;
@@ -91,13 +100,13 @@ header {
 
 
 #botonreloj {
-	justify-content: flex-start;
-	margin:20px;
+	margin:10px;
 	border-radius: 10px;
 	background-color: rgb(71, 124, 237);
     color:aliceblue;
     text-decoration: none;
     padding: 5px;
+    height: 25px;
 }
 
 #botonreloj a{

@@ -23,6 +23,7 @@ function backgroundImage() {
         body.style.backgroundImage = `url('${urlimages[indice]}')`;
     }, 15000);
 }
+
 backgroundImage();
 
 // parte links
