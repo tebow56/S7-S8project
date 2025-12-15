@@ -71,7 +71,6 @@ async function fetchForecast14days() {
     try {
         const fetching = await fetch('https://api.weatherapi.com/v1/forecast.json?key=f77d07abdacd4593913124243251212&q=Madrid&days=14&aqi=no&alerts=no'); 
         const data = await fetching.json(); 
-        console.log(data);
         return data ;
     }
     catch (error) {
@@ -91,7 +90,6 @@ function displayWeather(data) {
         const precipitacion = data.current.precip_mm;
         const humedad = data.current.humidity;
         const viento = data.current.wind_kph;
-        console.log(data);
         weatherApp.innerHTML = `
         <h1>${ciudad}, ${pais}</h1>
         <h2>${estado}</h2>
