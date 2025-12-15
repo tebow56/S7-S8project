@@ -1,0 +1,131 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mis css */
+
+body {
+	background-size: cover;
+	transition: background-image 1s linear;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    justify-content: center;
+    text-align: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	min-height: 100vh;
+}
+header {
+	display:flex;
+	flex-direction: row;
+	width: 100vw;
+}
+#retornoInicio{
+	justify-content: flex-start;
+	margin:20px;
+	border-radius: 10px;
+	background-color: rgb(71, 124, 237);
+    color:aliceblue;
+    text-decoration: none;
+    padding: 5px;
+}
+#retornoInicio a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 85vh;
+}
+
+
+#weatherApp {
+	background-color: rgba(65, 65, 92, 0.514);
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+}
+
+#weatherApp h1,h2{
+	font-size: 22px;
+
+}
+
+#parte4 {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	width:350px;
+	margin: 10px;
+}
+
+#forecast {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+
+#parte2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px;
+	gap: 15px;
+}
+
+#parte2 h3 {
+	font-size: 25px;
+}
+
+#parte3 {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}

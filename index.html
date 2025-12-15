@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main>
+        <section id="seccion1">
+            <div id="parteLinks">
+                <h1 id="tituloSection">Añade tu enlace de interés</h1>
+                <div id="linksSection">
+                <input type="text" id="linkname" placeholder="Introduce el nombre de tu enlace">
+                <input type="text" id="linkUrl" placeholder="Introduce el URL aquí">
+                <button id="addLinkButton" disabled>Añadir enlace</button>
+            </div>
+            <ul id="linkscontainer">
+        </ul>
+            </div>
+        </section>
+        <section id="seccion2">
+                <div id="parteReloj">
+                    <section class="reloj">
+                        <p>Son las...</p>
+                        <div id="reloj"> </div>
+                        <div id="fecha"> </div>
+                        <p id="mensajereloj"></p>
+                    </section>
+                </div>
+                <div id="parteMeteorologico">
+                    <div id ='weatherApp'>
+                    </div>
+                </div>
+                <div id="parteContraseñas">
+                        <div id="containerPassword">
+                            <h3>Crea tu contraseña segura</h3>
+                            <section id="section">
+                                <p>Numero de caracteres de la contraseña:</p>
+                                <div id="selector">
+                                <select id="userselection"> 
+                                    <option value="12" selected >12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                </select>
+                                <button id="generatePassword">Generar Contraseña</button>
+                                </div>
+                                <div id="password"></div>
+                            </section>
+                        </div>
+                </div>
+            
+        </section>
+    </main>
+    <footer>
+        <button class = "botones" id="botonContraseñas"><a href="./contraseñas/contraseñas.html">Password</a> </button>
+        <button class = "botones" id="botonLinks"><a href="./links/links.html">Links</a> </button>
+        <button class = "botones" id="botonMeteo"><a href="./meteorologico/meteorologico.html">Tiempo</a> </button>
+        <button class = "botones" id="botonReloj"><a href="./Reloj/reloj.html">Reloj</a> </button>    
+    </footer>
+    <script src="./script.js"></script>    
+</body>
+</html> 

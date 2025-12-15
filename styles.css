@@ -1,0 +1,313 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MIS CSS */
+
+
+body {
+	background-size: cover;
+	transition: background-image 1s linear;
+	display: flex;
+	flex-direction: column;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	min-height: 100vh;
+	
+}
+main{
+	display: flex;
+	flex-direction: row;
+	height: 90vh;
+}
+#seccion1 {
+	flex-direction: row;
+	width: 50%;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin-top: 15px;
+}
+
+#seccion2 {
+	display:flex;
+	flex-direction: column;
+	justify-content:space-around;
+	gap: 5px;
+	margin-top: 70px;
+
+}
+#parteLinks {
+	display:flex;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
+}
+.botones {
+	justify-content: flex-end;
+	margin:20px;
+	border-radius: 10px;
+	background-color: rgb(71, 124, 237);
+    color:aliceblue;
+    text-decoration: none;
+    padding: 5px;
+}
+.botones a {
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 10px;
+	padding: 10px;
+}
+
+
+
+
+/* parte Links */
+
+#linksSection {
+	margin-top: 5px;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	gap: 10px	;
+	background-color: rgba(65, 65, 92, 0.514);
+	padding: 20px;
+
+}
+
+#linkscontainer {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	justify-content: space-between;
+	gap: 15px;
+	background-color: rgba(65, 65, 92, 0.514);
+	padding: 20px;
+	width: 300px;
+}
+
+.linktitle{
+	display: flex;
+	flex-direction: row	;
+	font-size: 20px;
+	font-weight: bold;
+	justify-content: flex-end;
+	border: 1px solid black;
+	gap: 15px;
+	border-radius: 10px;
+	background-color: 	aliceblue;
+	
+	
+}
+#tituloSection{
+	color: aliceblue;
+	font-size: 25px;
+
+}
+.linktitle a{
+	text-decoration: none;
+	color: black;
+	padding: 4px;
+}
+
+.linktitle span {
+	font-size: 12px;
+	margin-right: -5px;
+	margin-top: -5px;
+	background-color: rgb(203, 115, 115);
+	height: 15px;
+}
+
+
+/* parte reloj */
+.reloj {
+    background-color: rgba(65, 65, 92, 0.514);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    height: 150px;
+    margin-top: -50px;
+	text-align: center;
+}
+#reloj {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#fecha {
+    font-weight: bold;
+    font-size: 23px;
+}
+#mensajereloj {
+    font-style: italic;
+    font-weight: 500    ;
+}
+
+
+#botonreloj {
+	justify-content: flex-start;
+	margin:20px;
+	border-radius: 10px;
+	background-color: rgb(71, 124, 237);
+    color:aliceblue;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#botonreloj a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* parte meteorologico */
+#weatherApp {
+	background-color: rgba(65, 65, 92, 0.514);
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+}
+
+#weatherApp h1,h2{
+	font-size: 22px;
+
+}
+
+#parte4 {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+	width:350px;
+	margin: 10px;
+}
+
+#forecast {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+}
+
+#parte2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 20px;
+	gap: 15px;
+}
+
+#parte2 h3 {
+	font-size: 25px;
+}
+
+#parte3 {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+/* parte contrañesas */
+#containerPassword {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0px;
+	padding: 5px;
+
+}
+#containerPassword h3 {
+	font-size: 25px;
+	margin-bottom: 2px;
+	padding-bottom: 2px;
+}
+
+#section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap:10px;
+	border-radius: 20px;
+	background-color: rgba(65, 65, 92, 0.514);
+	padding: 20px;
+}
+
+#section p {
+	margin-bottom: 10px;
+}
+#selector {
+	display:flex;
+	flex-direction: row;
+	gap:10px;
+    height: 40px;
+}
+
+#generatePassword{
+    background-color: rgb(71, 124, 237);
+    border-radius: 10px;
+    font-size: 17px;
+    text-align: center;
+
+    color:white
+}
+#userselection {
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#password {
+    font-size: 28px;
+    font-weight: bold;
+	color: rgb(202, 197, 227);
+}
+#finalpassword {
+    color: rgb(218, 183, 119);
+    font-size: 25px;
+    text-align: center;
+}
+#containerPassword h3{
+	color: aliceblue;
+
+}
